@@ -1,12 +1,15 @@
 # scrapper-diretorio
 Realiza scrapping do diretorio e dá histograma, quantidade, média e mediana dos arquivos executáveis
 Foi utilizado express e as libs:
+```
 File-system ("fs") -> Nativo Node.js
 Compute Histogram ("compute-histogram") -> Monta histograma
 Simple Statistics ("simple-statistics") -> Só utilizado para média e mediana, poderia utilizar Math nativa do js
 ASCII Histogram ("ascii-histogram") -> Monta histograma visual
+```
 
 Instruções
+```
 1. abra prompt comando
 2. mkdir <nomeDiretorio>
 3. cd nomeDiretorio
@@ -16,6 +19,7 @@ Instruções
 7. instala dependências (npm install)
 8. npm start (inicia servidor, rodar código dentro da pasta myApp)
 9. faz requisição POST em http://localhost:8001
+```
 
 No arquivo scrapper-diretorio/myapp/routes/index.js,
 Escolheu-se na linha 62 o diretório `C:\\Windows\\System32`,
@@ -55,14 +59,16 @@ Output exemplo:
   905KB - 938KB | =                                        | 3
   938KB - 972KB | ==                                       | 6
 ```
-
+```
 Quantidade arquivos diretório: 548
 Média tamanho arquivos: 167KB
 Mediana tamanho arquivos: 82KB
 Maior tamanho de arquivo: 972KB
 Tamanho bloco: 256KB
+```
 
 Arquivos (amostra):
+```
 Nome: nmscrub.exe Tamanho: 151352
 Nome: notepad.exe Tamanho: 201216
 Nome: nslookup.exe Tamanho: 89600
@@ -78,3 +84,4 @@ Nome: omadmclient.exe Tamanho: 432128
 Nome: omadmprc.exe Tamanho: 89600
 Nome: openfiles.exe Tamanho: 75776
 Nome: OpenWith.exe Tamanho: 123984
+```
