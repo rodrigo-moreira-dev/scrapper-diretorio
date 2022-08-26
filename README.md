@@ -24,7 +24,7 @@ A função giveBlockSize dá tamanho da palavra,
 A função getHistogramObject monta objeto a ser utilizado pela lib 'ascii-histogram' para construir histograma visual
 
 Output exemplo:
-
+```
      0KB - 33KB | ======================================== | 122
     33KB - 67KB | ======================================   | 116
    67KB - 100KB | ==============================           | 90
@@ -54,6 +54,7 @@ Output exemplo:
   871KB - 905KB | =                                        | 4
   905KB - 938KB | =                                        | 3
   938KB - 972KB | ==                                       | 6
+```
 
 Quantidade arquivos diretório: 548
 Média tamanho arquivos: 167KB
